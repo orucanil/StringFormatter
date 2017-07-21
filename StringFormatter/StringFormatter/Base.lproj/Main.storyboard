@@ -23,11 +23,12 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBZ-zD-HEz">
                                 <rect key="frame" x="87.5" y="103" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.63137254899999995" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="kSN-HI-sAY"/>
                                     <constraint firstAttribute="height" constant="40" id="wAb-n6-1d3"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -35,12 +36,13 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credit Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2P-X8-fBo">
-                                <rect key="frame" x="87" y="206" width="200" height="40"/>
+                                <rect key="frame" x="87" y="218" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.63137254899999995" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BfK-gL-YkS"/>
                                     <constraint firstAttribute="width" constant="200" id="XUy-WM-Srl"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -48,12 +50,13 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Serial Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="blA-3c-Z6V">
-                                <rect key="frame" x="87" y="328" width="200" height="40"/>
+                                <rect key="frame" x="87" y="333" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.63137254899999995" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="YO6-M4-tis"/>
                                     <constraint firstAttribute="height" constant="40" id="zXp-Bi-pUG"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -64,9 +67,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="blA-3c-Z6V" firstAttribute="centerX" secondItem="M2P-X8-fBo" secondAttribute="centerX" id="3tT-Kh-8di"/>
-                            <constraint firstItem="M2P-X8-fBo" firstAttribute="top" secondItem="JBZ-zD-HEz" secondAttribute="bottom" constant="63" id="A7d-Z7-8Na"/>
+                            <constraint firstItem="M2P-X8-fBo" firstAttribute="top" secondItem="JBZ-zD-HEz" secondAttribute="bottom" constant="75" id="A7d-Z7-8Na"/>
                             <constraint firstItem="JBZ-zD-HEz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GmU-Za-qtO"/>
-                            <constraint firstItem="blA-3c-Z6V" firstAttribute="top" secondItem="M2P-X8-fBo" secondAttribute="bottom" constant="82" id="HYz-Kr-j69"/>
+                            <constraint firstItem="blA-3c-Z6V" firstAttribute="top" secondItem="M2P-X8-fBo" secondAttribute="bottom" constant="75" id="HYz-Kr-j69"/>
                             <constraint firstItem="JBZ-zD-HEz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="c8N-Dc-LrT"/>
                             <constraint firstItem="M2P-X8-fBo" firstAttribute="centerX" secondItem="JBZ-zD-HEz" secondAttribute="centerX" id="gi5-q7-m1U"/>
                         </constraints>

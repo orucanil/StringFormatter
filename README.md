@@ -5,7 +5,7 @@ Simple Text Formetter (Credit Card Number, Phone Number etc.)
 ## Display Visual Example 
 
 ----
-![Visual1](http://g.recordit.co/2ExfUA6pbw.gif)
+![Visual1](http://g.recordit.co/bSDHyTdioe.gif)
 
 
 Installation
