@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StringFormatter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBZ-zD-HEz">
+                                <rect key="frame" x="87.5" y="103" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kSN-HI-sAY"/>
+                                    <constraint firstAttribute="height" constant="40" id="wAb-n6-1d3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bfw-Rp-tDd"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credit Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2P-X8-fBo">
+                                <rect key="frame" x="87" y="206" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BfK-gL-YkS"/>
+                                    <constraint firstAttribute="width" constant="200" id="XUy-WM-Srl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wP4-hT-g8e"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Serial Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="blA-3c-Z6V">
+                                <rect key="frame" x="87" y="328" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="YO6-M4-tis"/>
+                                    <constraint firstAttribute="height" constant="40" id="zXp-Bi-pUG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uLb-sz-8HK"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="blA-3c-Z6V" firstAttribute="centerX" secondItem="M2P-X8-fBo" secondAttribute="centerX" id="3tT-Kh-8di"/>
+                            <constraint firstItem="M2P-X8-fBo" firstAttribute="top" secondItem="JBZ-zD-HEz" secondAttribute="bottom" constant="63" id="A7d-Z7-8Na"/>
+                            <constraint firstItem="JBZ-zD-HEz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GmU-Za-qtO"/>
+                            <constraint firstItem="blA-3c-Z6V" firstAttribute="top" secondItem="M2P-X8-fBo" secondAttribute="bottom" constant="82" id="HYz-Kr-j69"/>
+                            <constraint firstItem="JBZ-zD-HEz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="c8N-Dc-LrT"/>
+                            <constraint firstItem="M2P-X8-fBo" firstAttribute="centerX" secondItem="JBZ-zD-HEz" secondAttribute="centerX" id="gi5-q7-m1U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textfieldCreditCard" destination="M2P-X8-fBo" id="66J-Kt-SOS"/>
+                        <outlet property="textfieldPhoneNumber" destination="JBZ-zD-HEz" id="lvf-eA-acC"/>
+                        <outlet property="textfieldSerialNumber" destination="blA-3c-Z6V" id="H85-lm-NxL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
