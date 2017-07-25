@@ -32,7 +32,9 @@ How to use ?
 ----------
 
 'x' or 'X' -> Any character
+
 'c' or 'C' -> Alphabetic character
+
 'n' or 'N' -> Numerical character
 
 
