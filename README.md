@@ -1,11 +1,11 @@
 # StringFormatter
 
-Simple Text Formetter (Credit Card Number, Phone Number etc.) 
+Simple Text Formetter (Credit Card Number, Phone Number, Serial Number etc.) Can be used in all text inputs according to the format pattern. If desired, large minor character restrictions can be made in the format pattern.
 
 ## Display Visual Example 
 
 ----
-![Visual1](http://g.recordit.co/bSDHyTdioe.gif)
+![Visual1](http://g.recordit.co/BAaWSNTpZK.gif)
 
 
 Installation
@@ -30,6 +30,8 @@ Unformatting method according to given format pattern. oldString can be empty(""
 
 How to use ?
 ----------
+
+If the text format is entered uppercase, the character input from the keyboard is displayed as a upper case character.
 
 'x' or 'X' -> Any character
 
