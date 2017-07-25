@@ -27,8 +27,14 @@ Formatting method according to given format pattern. oldString can be empty(""),
 
 Unformatting method according to given format pattern. oldString can be empty(""), but the final character unformatting may not work smoothly.
 
+
 How to use ?
 ----------
+
+'x' or 'X' -> Any character
+'c' or 'C' -> Alphabetic character
+'n' or 'N' -> Numerical character
+
 
 ```Swift
 
