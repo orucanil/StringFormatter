@@ -27,10 +27,10 @@ extension String {
         let stringUnformated = self.unformat(format, oldString: oldString)
         var newString = String()
         var counter = 0
-        if stringUnformated.characters.count == counter {
+        if stringUnformated.count == counter {
             return newString
         }
-        for i in 0..<format.characters.count {
+        for i in 0..<format.count {
             var stringToAdd = ""
             let unicharFormatString = format[i]
             let charFormatString = unicharFormatString
@@ -64,8 +64,8 @@ extension String {
             }
 
             newString += stringToAdd
-            if counter == stringUnformated.characters.count {
-                if i == format.characters.count - 2 {
+            if counter == stringUnformated.count {
+                if i == format.count - 2 {
                     let lastUnicharFormatString = format[i + 1]
                     let lastCharFormatStringUpper = lastUnicharFormatString.uppercased()
                     let lasrCharControl = (!(lastCharFormatStringUpper == String.ONLY_CHAR_UPPER) &&
@@ -84,7 +84,7 @@ extension String {
     func unformat(_ format: String, oldString: String) -> String {
         var string: String = self
         var undefineChars = [String]()
-        for i in 0..<format.characters.count {
+        for i in 0..<format.count {
             let unicharFormatString = format[i]
             let charFormatString = unicharFormatString
             let charFormatStringUpper = unicharFormatString.uppercased()
@@ -102,9 +102,9 @@ extension String {
                 }
             }
         }
-        if oldString.characters.count - 1 == string.characters.count {
+        if oldString.count - 1 == string.count {
             var changeCharIndex = 0
-            for i in 0..<string.characters.count {
+            for i in 0..<string.count {
                 let unicharString = string[i]
                 let charString = unicharString
                 let unicharString2 = oldString[i]
@@ -160,8 +160,8 @@ extension String {
     fileprivate func regexControlString(pattern: String) -> Bool {
         do {
             let regex = try NSRegularExpression(pattern: pattern, options: [])
-            let numberOfMatches = regex.numberOfMatches(in: self, options: [], range: NSRange(location: 0, length: self.characters.count))
-            return numberOfMatches == self.characters.count
+            let numberOfMatches = regex.numberOfMatches(in: self, options: [], range: NSRange(location: 0, length: self.count))
+            return numberOfMatches == self.count
         } catch {
             return false
         }
@@ -175,10 +175,10 @@ extension String {
     }
 
     subscript (r: Range<Int>) -> String {
-        let range = Range(uncheckedBounds: (lower: max(0, min(characters.count, r.lowerBound)),
-                                            upper: min(characters.count, max(0, r.upperBound))))
+        let range = Range(uncheckedBounds: (lower: max(0, min(count, r.lowerBound)),
+                                            upper: min(count, max(0, r.upperBound))))
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(start, offsetBy: range.upperBound - range.lowerBound)
-        return self[Range(start ..< end)]
+        return String(self[Range(start ..< end)])
     }
 }
