@@ -179,6 +179,7 @@ extension String {
                                             upper: min(count, max(0, r.upperBound))))
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(start, offsetBy: range.upperBound - range.lowerBound)
-        return String(self[Range(start ..< end)])
+        let rangeLast: Range<Index> = start..<end
+        return String(self[rangeLast])
     }
 }
