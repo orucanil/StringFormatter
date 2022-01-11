@@ -1,6 +1,8 @@
 # StringFormatter
 
-Simple Text Formetter (Credit Card Number, Phone Number, Serial Number etc.) Can be used in all text inputs according to the format pattern. If desired, large minor character restrictions can be made in the format pattern.
+Simple Text Formatter (Credit Card Number, Phone Number, Serial Number etc.) Can be used in all text inputs according to the format pattern. If desired, large minor character restrictions can be made in the format pattern.
+
+TextFieldFormatter : https://github.com/orucanil/TextFieldFormatter
 
 ## Display Visual Example 
 
